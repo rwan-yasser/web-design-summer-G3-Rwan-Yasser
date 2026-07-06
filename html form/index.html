@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+ <fieldset name="RegistrationForm">
+ <legend>Registration Information</legend>
+
+<label for="firstName" >First Name:</label>
+<input name="firstName" type="text"
+ maxlength="5" id="firstName" autofocus
+  placeholder="Enter Your First Name" pattern="^[A-Za-z]+$" 
+  title="First name must contain letters only (A–Z or a–z)">
+
+
+<br>
+
+<label for="emailForm">Email:</label>
+<input pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+ required id="emailForm" name="email" autocomplete="off" 
+ placeholder="Name@domain.subDomain">
+ 
+ <br>
+
+<label for="phoneForm">Phone:</label>
+<input  type="tel" id="phoneForm" name="phone"
+ pattern="^(011|010|012|015)[0-9]{8}$" maxlength="11"
+ placeholder="Enter Your Phone"
+  title="must start with 011 or 012 or 015 or 011">
+ 
+ <br>
+
+ <input type="file" accept=".png,image/png" name="imageFile">
+
+ <br>
+
+ <label for="coursesForm">Courses:</label>
+<input list="coursesList" id="coursesForm"
+ placeholder="search your course" name="coursesList">
+<datalist id="coursesList" autocorrect="off">
+    <option name="1" >html5</option>
+    <option name="2">html6</option>
+    <option name="3">css</option>
+    <option name="4">javascript</option>
+    <option name="5">bootstrap</option>
+ </datalist>
+
+ <br>
+
+<input type="date" required name="date">
+
+<br>
+
+<label for="comment">Comment:</label>
+<textarea name="commentArea" type="text"
+ id="comment" placeholder="Any Recomendations?" required></textarea>
+
+ <br>
+<label for="courseRange">Course Value (100–200):</label>
+<input type="range" id="courseRange" name="coursesRanges"
+ min="100" max="200" value="150">
+
+ <br>
+
+ <label>Gender:</label>
+<input type="radio" name="gender" value="female" id="girl">
+<label for="girl">Female</label>
+<input type="radio" name="gender" value="male" id="boy">
+<label for="boy">Male</label>
+
+<br>
+
+<label>Tracks:</label>
+<input type="checkbox" name="track" value="web" id="webDev">
+<label for="webDev">Web Development</label>
+<input type="checkbox" name="track" value="net" id="network">
+<label for="network">Network</label>
+<input type="checkbox" name="track" value="data" id="dataAnalysis">
+<label for="dataAnalysis">Data Analysis</label>
+
+<br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</fieldset>
+</form>
+
+
+</body>
+
+</html>
