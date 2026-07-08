@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.padding-top-bottom{
+    /* display: inline-block; */
+    /* ي عنصر ياخد display: inline-block; خاصية الـ margin: auto بتتعطل تماماً ومبتشتغلش معاه أفقيًا. */
+    width: 40%;
+    margin: 10px auto;
+    padding: 5px;
+    /* background-color: blue; */
+    text-align: center;
+    /* هيجبر البوكس الصغير يبقي في النص بالظبط */
+    
+}
+.padding-top-bottom2{
+    width: 80%;
+    margin:10px auto;
+    padding: 5px;
+    /* background-color: aqua; */
+}
+.contact-head{
+    display: inline-block;
+    /* margin: 10px auto; */
+    margin: 10px;
+    /* background-color: red; */
+    padding: 10px;
+text-align: center;
+line-height: 25px;
+}
+.hr-style{
+    width: 15%;
+    margin: 3% auto;
+    border: 2px solid orange;
+}
+.inputs-div{
+    display: inline-block;
+width: 48%;
+vertical-align: top;
+vertical-align:bottom ;
+margin-right: 10px;
+}
+.area-div{
+display: inline-block;
+vertical-align: top;
+vertical-align: bottom;
+width: 48%;
+}
+.inputs-div input {
+    display: block; /* ده السطر اللي هيخليهم ينزلوا تحت بعض */
+    width: 100%;    /* عشان يملوا الـ 48% كاملين */
+    margin-bottom: 10px; /* مسافة بين كل خانة والتانية */
+    padding: 5px;  /* عشان شكلهم يبقى مريح    */
+    border: 0;
+    border-style: none;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+}
+.area-div textarea {
+    width: 100%;   /* يملى مساحة الجزء اليمين كله */
+    height: 125px; /* طول مناسب عشان يماشي طول الـ 3 مدخلات اللي جنبه */
+    padding: 10px;
+    border: 0;
+    border-style: none;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+
+}
+.btn-div{
+    text-align: center;
+    width: 100%; /* مالي العرض كله عشان يوسطن براحته */
+    margin-top: 20px; /* مسافة حلوة تحت الانبوت والـ textarea */
+    display: block; /* عشان ينزل في سطر جديد لوحده تحتهم تماماً */
+}
+
+.btn{
+    background-color: orange;
+    border-radius: 5px;
+    padding: 5px;
+    /* margin: 10px auto; */
+    /* الـ margin: 10px auto; مش هتشتغل مع inline-block: زي ما افتكرنا سوا قبل كده، الـ margin: auto مابتشتغلش مع الـ inline-block عشان توسطنه أفقيًا. */
+    margin:10px ;
+    display: inline-block;
+    width: 20%;
+    border: none;
+    color: white;
+    cursor: pointer
+}
