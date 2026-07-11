@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+.padding-top-bottom{
+    padding: 2% 0;
+}
+.back-img{
+/* background-image: url(../images/OIP.jpg);
+background-size:70% 100%;
+background-position-x: right;
+background-repeat: no-repeat; 
+هنشيل الخلفية الصورة من كلاس السكشن لانها المفروض تبقي جوة الكونتانر الخاص بالديف اللي شايلهم كلهم */
+
+/* الـ section وظيفته دلوقتي بس يحدد الارتفاع والمساحة */
+min-height: 300px; 
+}
+.container1{
+margin: auto auto;
+width: 90%;
+}
+.flex-head{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.head-list{
+display: flex;
+justify-content: space-around;
+ flex-wrap: wrap;
+ width: 45%;
+}
+.head-list li{
+margin: 1%;
+padding: 1%;
+}
+.head-btns{
+display: flex;
+flex-wrap: wrap;
+width: 19%;
+}
+.head-btns button{
+background-color: rgb(247, 163, 19);
+border: none;
+margin: 2%;
+padding: 3% 5%;
+border-radius: 5%;
+cursor: pointer;
+}
+.container2{
+margin: auto auto;
+width: 90%;
+display: flex;
+flex-direction: column; /* عشان العناصر تفضل تحت بعضها */
+align-items: flex-start;
+/* background image */
+background-image: url(../images/OIP.jpg);
+background-size:70% 100%;
+background-position-x: right;
+background-repeat: no-repeat;
+min-height:300px;
+}
+.headline{
+padding:2% 2% 2% 0;
+margin: 4% 2% 2% 0;
+max-width: 250px;
+line-height: 1.6;
+font-family:sans-serif;
+}
+.flex-search{
+display: flex;
+/* justify-content: flex-start; its the default value already exist */
+height: 300px;/*the same height of image  */
+align-items: center;
+/* to use align items must exist height for it move according to it and must be in px not % if parent height not defined */
+width: 50%;
+position: relative;
+}
+.flex-search input {
+width: 80%;
+border-style: none;
+/* box-shadow: offset-x offset-y blur-radius spread-radius color inset; */
+box-shadow:0 0 5px 2px lightgray;
+padding: 4%;
+border-radius: 3%;
+padding-right: 2%;
+}
+.flex-search button{
+border-style: none;
+background-color: rgb(247, 163, 19);
+box-shadow: 0 0  5px 2px lightgray;
+padding: 4%;
+border-radius: 3%;
+cursor: pointer;
+}
+.search-icon{
+position: absolute;
+right: 90%;
+pointer-events: none; /* عشان لما تدوسي على الأيقونة الماوس يعلم جوه الـ input */
+/* z-index: 10; عشان تضمن إنها فوق الـ input ومتغطيش */
+margin-right: 2%;
+margin-left: 2%;
+}
+.scroll-down{
+writing-mode: vertical-rl;
+color: dimgrey;
+/* position: fixed;
+z-index: 999; */
+
+}
+.flex-address{
+display: flex;
+background-color:rgb(247, 163, 19) ;
+justify-content: space-around;
+width: 40%;
+padding: 2%;
+align-self: flex-end;
+}
+
+/* about section */
+
+.flex-about{
+    display: flex;
+    justify-content: space-between;
+}
+.clients-card{
+display: flex;
+justify-content: space-between;
+align-items: center;   
+flex-wrap: wrap;
+width: 45%;
+}
+.card{
+background-color: lightgray;
+width: 43%;
+text-align: center;
+border-radius: 2%;
+padding: 1%;
+}
+.our-company{
+    width: 45%;
+}
+.our-company h2 , .our-company p{
+    margin-bottom: 5%;
+}
+.card h2{
+    color:rgb(247, 163, 19) ;
+}
+ /* appartment section */
+ .bg-color{
+background-color: lightgrey;
+ }
+.flex-appartment{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items:baseline; /* عشان تخليهم كلهم علي نفس سوي الصورة خط واحد */
+row-gap: 15px;
+}
+ .appartment-card{
+background-color: white;
+width: 30%;
+box-shadow: 0px 0px 5px 2px rgb(158, 153, 153);
+border-radius: 2%;
+position: relative;
+
+ }
+ .h2-appartment{
+    margin-bottom: 5%;
+    max-width: 300px;
+ }
+ .appartment-card img{
+    width: 100%;
+    height: 150px;
+ }
+ .appartment-card p , .appartment-card h3{
+    padding: 2%;
+ }
+ .price{
+color:rgb(247, 163, 19) ;
+ }
+ .fa-car{
+    position: absolute;
+    left: 120px;
+    bottom: 5px;
+    color: dimgrey;
+    /* background-color: yellowgreen; */
+ }
+ .search-view{
+    /* background-color: red; */
+    margin-top: 4%;
+  
+ }
+ .search-view input{
+    padding: 2% 2% 2% 0;
+    border-style: none;
+    width: 35%;
+ }
+ .search-btn2{
+background-color:rgb(247, 163, 19) ;
+border-style: none;
+background-color: rgb(247, 163, 19);
+padding: 2% 3% 2% 3%;
+text-align: center;
+border-radius: 3%;
+cursor: pointer;
+ }
+ .view-appartments{
+    padding: 2% 3%;
+    margin-left: 2%;
+    border-style: none;
+border-radius: 3%;
+cursor: pointer;
+ }
+
+  /* services section */
+  .container1 h2{
+    padding: 2% 2% 2% 0;
+
+  }
+   .container1 p{
+margin-bottom: 5%;
+max-width: 300px;
+   }
+  .flex-services{
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+  }
+
+.alone-img-div{
+    width: 40%;
+    display: flex;
+    align-self: flex-start;
+}
+  .alone-img-div img{
+    width: 100%;
+  }
+  .cc{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center; 
+    row-gap: 10px;
+   
+}
+  .cc h2 , .cc p{
+    padding: 2%;
+    padding-bottom: 4%;
+  }
+  .service1{
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  /*awesome section  */
+  .flex-awesome1 , .flex-awesome2 , .flex-awesome3{
+    display: flex;
+    justify-content: space-between;
+ align-items:flex-start;
+ margin-bottom: 5%;
+
+}
+.img-awesome{
+    width: 45%;
+    position: relative;
+}
+  .img-awesome img{
+    width: 100%;
+    top: 4;
+}
+.fa-location-dot , .fa-phone{
+color: white;
+}
+.awesome-content{
+    width: 45%;
+}
+ .h2-middle-awesome{
+    text-align: right;
+ }
+ .awesome-content{
+    padding: 2%;
+ }
+.awesome-content button{
+border-style: none;
+background-color: rgb(1, 11, 48);
+padding: 3% 5%;
+margin: 0 6%;
+margin-left: 0;
+color: white;
+text-align: center;
+border-radius: 3%;
+cursor: pointer;
+}
+.post1{
+background-color: rgb(247, 163, 19);
+position: absolute;
+padding: 5%;
+bottom:-10px;  
+left: 20px;
+}
+.post2{
+background-color: rgb(247, 163, 19);
+position: absolute;
+padding: 5%;
+right: -10px;
+bottom: -20px;
+}
+
+/* contact us section */
+
+.back-color{
+    color: white;
+    background-color: rgb(1, 11, 48);
+}
+.flex-contact-search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-search{
+    width: 40%;
+    position: relative;
+}
+.flex-contact-search i{
+    position: absolute;
+color: rgb(1, 11, 48);
+    left: 166px;
+    top: 15px;
+}
+.flex-contact-search h2{
+    max-width: 250px;
+}
+.contact-search-input{
+    padding: 3%;
+    padding-right: 6%;
+    margin: 2%;
+    border-style: none;
+}
+hr{
+    border: 1px solid lightgrey;
+    margin: 4%;
+}
+.rights-text p{
+    max-width:150px;
+    font-weight:50;
+    padding-top: 4%;
+    margin-top: 4%;
+}
+.flex-foot{
+display: flex;
+justify-content: space-around;
+align-items: flex-start;
+}
+.rights-list-div{
+width: 60%;
+display: flex;
+justify-content:space-around;
+align-items: flex-start;
+}
+.rights-list-div h4{
+color: lightgray;
+margin-bottom: 5%;
+}
