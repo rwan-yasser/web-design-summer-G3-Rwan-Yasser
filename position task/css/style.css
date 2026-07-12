@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+display: block;
+width: 100%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+margin: auto auto;
+width: 90%;
+}
+.padding-top-bottom{
+    padding: 2% 0;
+}
+.card{
+    width: 30%;
+    box-shadow:0 0 5px 2px lightgray;
+}
+.flex-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-icons{
+font-size: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+.back-img-div{
+    position: relative;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.348);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+      display: flex;
+    justify-content: left;
+    align-items:flex-end;
+    display: none;
+}
+.overlay a{
+    color: white;
+    padding: 2%;
+    padding-left: 3%;
+    margin: 4%;
+}
+.circle-img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 3px solid  white;
+    position: absolute;
+     left: 71%;
+    top: 85%;
+
+}
+.content-card{
+    margin-top: 5%;
+    padding: 30px 15px 15px 15px;
+}
+.content-card h2{
+    color: rgb(3, 204, 204);
+}
+hr{
+    width: 20%;
+    border: 2px solid black;
+    margin: 4% 0;
+
+}
+ .back-img-div:hover .overlay {
+display:flex ;
+ }
+
