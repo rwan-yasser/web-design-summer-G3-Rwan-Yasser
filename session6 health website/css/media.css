@@ -1,0 +1,112 @@
+
+  /* head images */
+ /* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+   .flex-head-imgs{
+    display: flex;
+    justify-content: space-evenly;
+}
+    .head-imgs img{
+        width: 40%;
+        max-height: 270px;
+    aspect-ratio: 1/2;
+    }
+
+    /* what you eat */
+   
+    /* .flex-leaves h2{
+        max-width: 600px;
+    } */
+ }
+
+ /* head images */
+ /* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+  .flex-head-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap:25px;
+  }
+    .flex-head-imgs img{
+    width: 85%;
+    margin: 2%;
+    align-self: center;
+   }
+   /* what you eat */
+    .fruit-img-div{
+        display: none;
+    }
+     .fa-envira{
+   width: 30px;
+    height: 30px;
+/*نوسطن المربع البيج نفسه جوه الكارت ونعمل مسافة تحته */
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   align-content: center;
+
+   margin: 5px auto; 
+    border-radius: 2%;
+    }
+    .flex-leaves{
+         width: 90%;
+        padding: 2%;
+        text-align: center;
+    }
+
+ }
+
+ /* nav bar  */
+  /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .list-logo{
+        display:none;
+    }
+    .fa-bars{
+        display: flex;
+    }
+    /*what you eat */
+    .fruit-img-div{
+        display: none;
+    }
+    .fa-envira{
+   width: 30px;
+    height: 30px;
+/*نوسطن المربع البيج نفسه جوه الكارت ونعمل مسافة تحته */
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   align-content: center;
+
+   margin: 5px auto; 
+    border-radius: 2%;
+    }
+    .flex-leaves{
+        width: 100%;
+        padding: 2%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: space-around;
+        align-items: center;
+    }
+.flex-fresh{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    text-align: center;
+}
+.img-fresh-div img{
+margin: auto;
+}
+.ul-fresh{
+    padding: 2%;
+    margin: auto;
+    text-align: center;
+}
+ }
