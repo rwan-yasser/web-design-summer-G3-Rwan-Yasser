@@ -1,0 +1,22 @@
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+ @media (max-width: 767.98px) { 
+    /* .collapse , .navbar{
+    display: flex;
+}
+.ss .logo-list .button-nav .btn{
+    display: none;
+} */
+ *{
+    font-size: 20px;
+ }
+ .navbar .input-search{
+    display: none;
+ }
+ .photos-content .tab-pane .img-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+ }
+ } 

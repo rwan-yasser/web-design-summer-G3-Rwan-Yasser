@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-img{
+background-image: url("../images/head\ background\ dog.jpg");
+min-height:400px;
+/* background-size: 135%, 115%; */
+background-size: cover;
+background-position-x: left;
+background-repeat: no-repeat;
+/* color: white; */
+}
+.head{
+    padding: 15% 0;
+}
+/* .collapse , .navbar{
+    display: none;
+} */
+.tab-pane img {
+    /* width: 100%; */
+    display: inline-block;
+
+}
+.services-section .row img  {
+width: 100%;
+height: 250px;
+object-fit: cover;
+border-radius: 2%;
+}
+.our-team-section .row img {
+    width: 100%;
+    border-radius: 3%;
+}
+
+.adpt-img img{
+    min-height: 516px;
+    border-radius: 2%;
+
+}
+hr{
+    border: 1px solid white;
+    margin: 2% 0;
+}
+.footer-section ul{
+    list-style: none;
+}
