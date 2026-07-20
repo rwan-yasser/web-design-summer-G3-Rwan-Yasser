@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 80%;
+    margin: auto auto;
+}
+
+.d-flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.padding-top-bottom{
+    padding: 4% 0%;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.card{
+    width: 30%;
+}
+.card h2 , .card p{
+    background-color: lightgray;
+}
+.card3 img{
+width: 100%;
+aspect-ratio: 1 /1 ;
+/*            width, height    */
+border-radius: 50%;
+}
+img:hover{
+    filter:brightness(50%)
+}
+.form-div{
+    width: 100%;
+    flex-wrap: wrap;
+}
+.form{
+    border: 1px blue solid;
+    padding: 2%;
+    margin: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: wrap;
+}
+.form input{
+    width: 70%;
+}
+/* //////////////////// */
+/* .appear-content , .disappear-content{
+    width: 100%;
+    height: 100%;
+}
+.card-move{
+    width: 40%;
+    position: relative;
+    background-color: red;
+}
+.appear-content{
+    background-color: blue;
+    position: absolute;
+    
+    transform: 1s;
+}
+.disappear-content{
+    background-color: aqua;
+}
+.card-move .appear-content:hover{
+    top:0;
+transition: 1s;
+} */
+
+/* /////////////////////////// */
+.div1{
+background-color: aquamarine;
+}
+.div2{
+    background-color: blueviolet;
+}
+.div1 , .div2{
+    width: 40%;
+}
+.div-card:hover{
+    transform: translateX(100px);
+    transform: translateX(50%);
+    transform: translateX(-50%);
+
+
+    transform: translateY(20px);
+
+}
