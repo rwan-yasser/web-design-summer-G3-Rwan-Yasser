@@ -3,7 +3,7 @@
 // var lastName="yasser"
 // console.log(firstName +" "+ lastName)
 // console.log(`my full name is
-//      ${firstName} ${lastName}`)
+// ${firstName} ${lastName}`)
      
 // var age=10
 // var num=50

@@ -112,3 +112,63 @@ let testVar=testFunc(2,5)
 console.log(testVar)
 //لاحظ لو مكنتش حاطة في الدالة نفسها return الطباعة هتطلع 
 undefined
+--------------------------------------------------------------------
+لاحظ فرق مهم في التخزين والاستدعاء للدالة
+let var =function(){
+ return "rwan"
+}
+console.log( var() ) 
+//دي كدة هترجع كلمة روان بس يعني الناتج بتاع الدالة لان المتغير بقي هو الدالة نفسها مش مجرد متخزنة فيه عشان كدة لازم احط له القوسين لانه بقي دالة وكدة بقي اسمة 
+function expression
+
+console.log(var)
+//هنا هيرجع الدالة اللي متخزنة جواة كمتغير هتطلع كدة 
+f(){
+return "rwan"
+}
+
+--------------------
+arrow function
+let var=(parameter)=>{
+code lines
+}
+or 
+let var=(parameter)=> one code line
+ex:
+let userName = (num)=> num > 30 console.log(userName(20)) //false
+منساش احط القوسين للمتغير و انا بستعدعية عشان دة بقي هو الدالة نفسها
+اهميتها انها بتوفر وقت و مساحة للكتابى عن الدالة العادية ذي 
+ function checkAge(age) {
+     return age >= 18;
+ }
+console.log(checkAge(20))
+//equal to
+let checkAge=(age)=> age>=18
+console.log(checkAge(20))
+-------------------------------
+لو عايزة اخزن حاجة جوة المتصفح و متضعش حتي ول قفلت وعملت ريفرش استحخدم متغير اسمة LocalStorage
+و بعدة استخد دالة حاجهزة لاضافة العنصر اللي انا عايزاة فيه ذي اراي مثلا
+ex:
+let users=[
+ {
+        name:"rwan",
+        id:1,
+        balance:5000000
+    }
+]
+//LocalStorage.setItem(key ,value)
+//المفتاح هو الاسم اللي بتحطة للقيمة 
+LocalStorage.setItem("bank",JSON.stringify(users))
+
+لما بتدّي للـ localStorage.setItem حاجة مش String (زي الـ Array بتاعة الـ Objects)، المتصفح بيحاول يحولها لنص تلقائياً عن طريق تشغيل أسلوب افتراضي اسمه .toString().
+//Storage {bank:'[{"name":"rwan","id":1,"balance":5000000},{"name":…000000},{"name":"joudy","id":3,"balance":500000}]', Name: 'zayn', hello: '[object Object],[object Object],[object Object]', length: 3}
+
+console.log(localStorage.getItem("bank"))
+//دي بطبع الناتج في الكونسول
+لاحظ لو مكتبتش جملة JSON.stringify
+لما بتدّي للـ localStorage.setItem حاجة مش String (زي الـ Array بتاعة الـ Objects)، المتصفح بيحاول يحولها لنص تلقائياً عن طريق تشغيل أسلوب افتراضي اسمه .toString().
+
+الـ Object الواحدة لما بيتحول لـ string بالطريقة العادية دي بيبقى شكله: "[object Object]"
+LocalStorage.getItem("bank")
+//[object,object]
+ولاحظ لو كتبت المفتاح اسمة غلط هيطلع null
